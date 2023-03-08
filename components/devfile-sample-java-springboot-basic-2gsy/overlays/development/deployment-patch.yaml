@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-java-springboot-basic-2gsy
+  namespace: e2e-demos-rgog-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:60ceb506a018c4367333e6560ae2bf23b24525e1034f4f1c540633d29693bcbc
+        name: my-java-springboot
+        resources: {}
+status: {}
